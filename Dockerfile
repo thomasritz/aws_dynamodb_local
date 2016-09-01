@@ -11,7 +11,7 @@ RUN wget http://dynamodb-local.s3-website-us-west-2.amazonaws.com/dynamodb_local
     tar xzf dynamodb_local_latest.tgz && \
     rm dynamodb_local_latest.tgz
 
-VOLUME ["/var/dynamodb_local", "/var/dynamodb"]
+VOLUME "/var/dynamodb_local"
 
 EXPOSE 8000
 
