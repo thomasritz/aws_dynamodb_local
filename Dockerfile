@@ -7,9 +7,9 @@ MAINTAINER Thomas Ritz <thomas.ritz@infopark.de>
 RUN mkdir /var/dynamodb
 WORKDIR /var/dynamodb
 
-RUN wget http://dynamodb-local.s3-website-us-west-2.amazonaws.com/dynamodb_local_latest.tgz && \
-    tar xzf dynamodb_local_latest.tgz && \
-    rm dynamodb_local_latest.tgz
+RUN wget https://s3-us-west-2.amazonaws.com/dynamodb-local/dynamodb_local_latest.tar.gz && \
+    tar xzf dynamodb_local_latest.tar.gz && \
+    rm dynamodb_local_latest.tar.gz
 
 VOLUME "/var/dynamodb_local"
 
