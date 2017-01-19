@@ -7,6 +7,7 @@ MAINTAINER Thomas Ritz <thomas.ritz@infopark.de>
 RUN mkdir /var/dynamodb
 WORKDIR /var/dynamodb
 
+ENV DYNAMODB_LOCAL_VERSION 2016-05-17_1.0
 RUN wget https://s3-us-west-2.amazonaws.com/dynamodb-local/dynamodb_local_latest.tar.gz && \
     tar xzf dynamodb_local_latest.tar.gz && \
     rm dynamodb_local_latest.tar.gz
